@@ -6,7 +6,8 @@ config/config.m
 
 # Private source PDFs and local generated outputs
 data/papers_pdf/
-outputs/
+outputs/*
+!outputs/.gitkeep
 
 # MATLAB temporary files
 *.asv
