@@ -98,3 +98,9 @@ thermoscout_matlab/
 ThermoScout is a research-support prototype for literature triage and
 engineering-question generation. Its outputs are not autonomous design decisions
 or scholarly citations; extracted information and references require human review.
+
+## Demo Corpus Notice
+
+`data/papers.csv` contains a mixed demonstration corpus for testing the
+ThermoScout workflow. Records labeled `Synthetic demo record` use placeholder
+metadata and must not be treated as citable scholarly references.
