@@ -67,10 +67,18 @@ for i = 1:numel(recommendations)
     fprintf(fid, "\n");
 end
 
-fprintf(fid, "\n## Model Limitations of This Analysis\n\n");
-fprintf(fid, "- Based on abstract/PDF text only; no independent experimental verification performed.\n");
-fprintf(fid, "- Related-paper recommendations limited to the local corpus in data/papers.csv.\n");
-fprintf(fid, "- LLM-extracted values must be cross-checked against the original PDF before citing externally.\n");
+fprintf(fid, '## Scope and Validation Notice\n\n');
+
+fprintf(fid, ['This report is a public demonstration of the ThermoScout ', ...
+    'research-support workflow.\n\n']);
+
+fprintf(fid, ['Source-grounded fields are extracted from the cited paper text. ', ...
+    'Validation hypotheses are AI-generated prompts for engineering review and ', ...
+    'are not author-stated conclusions.\n\n']);
+
+fprintf(fid, ['No independently verified experimental validation was performed. ', ...
+    'Extracted values and references must be cross-checked against the original ', ...
+    'publication before external or scholarly use.\n']);
 
 fclose(fid);
 
