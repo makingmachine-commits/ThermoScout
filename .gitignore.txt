@@ -1,5 +1,21 @@
+# API keys and local secrets
 .env
+config.m
+config/config.m
+*.key
+
+# Private source PDFs and local generated outputs
+data/papers_pdf/
 outputs/
-data/papers.csv
+
+# MATLAB temporary files
 *.asv
 *.mat
+*.mlx~
+*.m~
+*.tmp
+
+# OS/editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
