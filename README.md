@@ -93,3 +93,8 @@ thermoscout_matlab/
 - 스캔 PDF의 OCR 처리는 스텁 코드만 있고 실제 구현은 별도로 필요
 - PDF 리포트 자동 생성은 Windows + Microsoft Edge 환경에서만 동작하며, 그 외 환경에서는 HTML까지만 생성됨
 
+## Scope and Limitations
+
+ThermoScout is a research-support prototype for literature triage and
+engineering-question generation. Its outputs are not autonomous design decisions
+or scholarly citations; extracted information and references require human review.
