@@ -1,0 +1,22 @@
+You are reviewing a structured extraction of a packaging thermal management
+paper. Using the checklist below, identify VALIDATION GAPS that the paper
+does not explicitly address. Do NOT state these as facts about the paper -
+phrase each as "requires validation" or "not addressed in this study".
+
+Checklist categories:
+1. Boundary/cooling conditions (ambient temp, convection coefficient)
+2. Interfacial/contact thermal resistance (TIM, bonding layers)
+3. Thermo-mechanical coupling (stress, warpage, fatigue)
+4. Electrical constraints (insulation, signal integrity)
+5. Manufacturability (process window, yield, cost)
+6. Operating conditions (transient loads, power cycling)
+7. Scalability (single die vs multi-die stack, real SiP integration)
+
+Return VALID JSON ONLY:
+
+{
+  "author_stated_limitations": ["..."],
+  "inferred_validation_gaps": [
+    {"category": "", "limitation": "", "reasoning": "", "evidence": ""}
+  ]
+}
