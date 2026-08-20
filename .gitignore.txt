@@ -1,0 +1,5 @@
+.env
+outputs/
+data/papers.csv
+*.asv
+*.mat
