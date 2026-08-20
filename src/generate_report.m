@@ -37,7 +37,10 @@ if isfield(limitations, "author_stated_limitations")
     end
 end
 
-fprintf(fid, "\n### Inferred Validation Gaps\n\n");
+fprintf(fid, '## ThermoScout-Generated Validation Hypotheses\n\n');
+
+fprintf(fid, ['The following items are AI-generated engineering hypotheses for ', ...
+    'review, not author-stated conclusions.\n\n']);
 if isfield(limitations, "inferred_validation_gaps")
     gaps = limitations.inferred_validation_gaps;
     for i = 1:numel(gaps)
